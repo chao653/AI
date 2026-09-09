@@ -35,3 +35,4 @@
 ## 修改记录
 
 - 2026-09-09 由 `project-scaffold` 脚手架创建（模板版，三库口径为 Kira 默认，待项目确认）。
+- 2026-09-09 三库口径已按文件 `Assessment-2.5 - General Passage` 实际引用确认：组件 `ShadCN-Default`（key `lk-fed15319…`）/ token `Design System 2.0 Foundations`（key `lk-0fda860d…`）/ 图标 `Design System 2.0 Icons`（key `lk-6028f712…`，Phosphor，默认取 Weight=Regular）。旧库 `Kira Custom Components (TO BE ARCHIVED)` 仍在库列表中，不得用于新稿。
