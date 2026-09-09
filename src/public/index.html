@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ELIZA · AI Chatbot</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <div class="app__brand">
+          <span class="app__logo" aria-hidden="true">🧠</span>
+          <div>
+            <h1 class="app__title">ELIZA</h1>
+            <p class="app__subtitle">A classic AI chatbot, running fully offline</p>
+          </div>
+        </div>
+        <span class="app__status" id="status" title="API health">connecting…</span>
+      </header>
+
+      <section class="chat" id="chat" aria-live="polite" aria-label="Conversation"></section>
+
+      <form class="composer" id="composer" autocomplete="off">
+        <input
+          class="composer__input"
+          id="input"
+          name="message"
+          type="text"
+          placeholder="Tell ELIZA how you feel…"
+          aria-label="Message"
+          required
+        />
+        <button class="composer__send" id="send" type="submit">Send</button>
+      </form>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

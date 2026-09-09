@@ -1,0 +1,10 @@
+{
+  "name": "AI — ELIZA Chatbot",
+  "install": "npm install",
+  "terminals": [
+    {
+      "name": "server",
+      "command": "npm start"
+    }
+  ]
+}
