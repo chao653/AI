@@ -29,3 +29,19 @@
 - **结果状态**：已完成（本帧）；同组帧同步 **待用户确认**。
 - **截图**：`参考截图/2026-09-09-general-passage-highlighted-before.png`、`参考截图/2026-09-09-general-passage-highlighted-after.png`
 - **回退信息**（Question Card 原文案）：题号 `1`；题干 `Which crop was known as "King Cotton" and dominated the Southern economy before the Civil War?`；选项 `Tobacco` / `Cotton`（选中）/ `Rice` / `Indigo`。
+
+## 2026-09-09 · 改为独立设计稿：原帧全量回退，新建 `optimization 4`
+
+- **任务来源**：用户指令「不是在原稿上面看，是另外做一个设计稿」。
+- **涉及节点**：
+  - 原帧 `3420:56555` — 已回退到修改前状态（题号 / 文案 / 高亮宽度 / stepper 绝对定位 / 选区包裹层 `Frame 2611425` 重建为 `3534:26904` / 全部图层名恢复）。回退后截图与修改前截图像素级一致（diff = 0）。
+  - 新帧 `3534:23922` — `optimization 4` — https://www.figma.com/design/m44q0l36tqh9l1PdggbGho/Assessment-2.5---General-Passage?node-id=3534-23922 ，位于页面 `🛝 EXPLORATION` 顶层 (30700, 15736)，紧接用户既有的 `optimization 2 / 3` 一行。
+  - 注释文本 `3537:38` — 帧上方 11px 说明，格式沿用页面既有 `Variant A — …` 注释。
+  - 新帧内新增 `Scroll Fade` `3534:26905`（Passage Panel 底部 56px 渐隐）。
+- **操作摘要**：
+  1. 以已修正的帧克隆出 `optimization 4`（继承上一条全部修正：题号、题目内容、高亮收口、stepper 居中、选区清理、语义命名）。
+  2. 原帧按上一条记录逐项逆向还原。
+  3. `optimization 4` 追加：Notes 切换列文案 `Show` → `Notes`（实例文本覆盖）；Passage Panel 底部加 `Scroll Fade`（线性渐变，上端透明、下端绑 surface token `3092:772`，宽 606 不遮滚动条，约束 STRETCH / MAX）；Content Card 顶部内边距 32 → 24。
+- **未动**：同组另两帧；库侧问题（Notes Switch 母版裸白、`Steper` 拼写）。
+- **结果状态**：已完成。
+- **截图**：`参考截图/2026-09-09-optimization-4.png`
