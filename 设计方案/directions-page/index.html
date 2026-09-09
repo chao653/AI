@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Directions 页面 · 两版方案 HTML demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter','PingFang SC','Microsoft YaHei',sans-serif;background:#f3f4f6;color:#0a0a0a;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:48px}
+  .wrap{max-width:960px;width:100%}
+  .eyebrow{font-size:14px;font-weight:500;color:#888}
+  h1{font-size:24px;font-weight:600;margin-top:8px}
+  .note{font-size:14px;color:#888;margin-top:8px;line-height:20px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:32px}
+  a.card{display:block;background:#fff;border:1px solid rgba(0,0,0,.12);border-radius:16px;padding:24px;text-decoration:none;color:inherit;transition:box-shadow .15s}
+  a.card:hover{box-shadow:0 4px 16px rgba(0,0,0,.08)}
+  .card .tag{display:inline-block;font-size:12px;font-weight:600;color:#6244f5;background:#ede8ff;border-radius:6px;padding:4px 8px}
+  .card h2{font-size:18px;font-weight:600;margin-top:12px}
+  .card p{font-size:14px;line-height:20px;color:#888;margin-top:8px}
+  .card .cta{display:inline-block;margin-top:16px;font-size:14px;font-weight:500;color:#6244f5}
+  .footer{font-size:12px;color:#888;margin-top:32px;line-height:18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Assessment 2.5 · 考试前 Directions 页</div>
+  <h1>两版方案 HTML demo</h1>
+  <p class="note">与 Figma 稿同源（文件 Assessment-2.5 - General Passage，Section「Directions 页面」）。文案与数字为智能填充占位，以 PRD 为准。</p>
+  <div class="grid">
+    <a class="card" href="variant-a.html">
+      <span class="tag">Variant A · 分节级</span>
+      <h2>Section card 版</h2>
+      <p>沿用答题页壳层：顶栏 + 内容卡 + 底栏。左栏六条编号说明，右栏 Section overview、工具 chips、计时提示、已读勾选；底栏 Back to overview + Begin Section 2。</p>
+      <span class="cta">打开 Variant A →</span>
+    </a>
+    <a class="card" href="variant-b.html">
+      <span class="tag">Variant B · 整卷级</span>
+      <h2>Split layout 版</h2>
+      <p>参考 Assessment 2.0 草稿布局重构：整页左右分栏，左侧大字总时长 + Start assessment 内联 CTA，右侧 Test structure 表 + Scores + Before you start。</p>
+      <span class="cta">打开 Variant B →</span>
+    </a>
+  </div>
+  <p class="footer">Figma 节点：Variant A `3545:24162` · Variant B `3556:24231`。样式 token 取自 Design System 2.0 Foundations 实际解析值；图标为 Phosphor（与 DS 2.0 Icons 同源）。</p>
+</div>
+</body>
+</html>
